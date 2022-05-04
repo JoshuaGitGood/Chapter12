@@ -1,9 +1,6 @@
-package Chapter12Exercise18.src.Ex12;
 import java.io.*;
 
 import java.util.ArrayList;
-
-
 
 public class Processess {
     ArrayList<Items> itemList = new ArrayList<Items>();
@@ -75,7 +72,7 @@ public class Processess {
 
     public void writeInventoryFile() {
         String here = System.getProperty("user.dir");
-        File file = new File(here+"\\Inventory.txt");
+        File file = new File(here + "\\Inventory.txt");
         FileWriter fw;
         BufferedWriter bw;
 
@@ -87,7 +84,7 @@ public class Processess {
             // bw.write(itemList[arrInput]);
 
             // }
-            bw.write(String.format("%5s %5s %5s","ID", "ITEM", "AMOUNT\n"));
+            bw.write(String.format("%5s %5s %5s", "ID", "ITEM", "AMOUNT\n"));
             fw.flush();
             bw.flush();
 
@@ -105,6 +102,5 @@ public class Processess {
         }
         System.out.println(here);
     }
-    
 
 }

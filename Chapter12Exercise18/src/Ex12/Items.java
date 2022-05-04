@@ -1,16 +1,13 @@
-package Chapter12Exercise18.src.Ex12;
-
 public class Items {
     private int entry;
     private String name;
     private int amount;
 
-    public Items(int entry, String name, int amount){
+    public Items(int entry, String name, int amount) {
         this.entry = entry;
         this.name = name;
         this.amount = amount;
     }
-
 
     /**
      * @return int return the entry

@@ -1,14 +1,12 @@
-package Chapter12Exercise18.src.Ex12;
-
-
 import java.util.Scanner;
 
 public class C12E18 {
     static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) throws Exception {
 
         Processess p = new Processess();
-        
+
         int ch = 0;
         p.addInitialdata();
 
@@ -36,20 +34,20 @@ public class C12E18 {
                 p.addItem(itemName, itemAmount);
             }
             if (ch == 3) {
-                
+
                 System.out.print("ID :");
                 int id = sc.nextInt();
                 p.discontinue(id);
 
             }
             if (ch == 4) {
-                
+
                 System.out.print("ID :");
                 int id = sc.nextInt();
                 p.checkItemAmount(id);
 
             }
-            if(ch == 5){
+            if (ch == 5) {
                 p.writeInventoryFile();
             }
 
